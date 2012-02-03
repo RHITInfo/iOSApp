@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D3A734A14DCA38A00B61F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3A734914DCA38A00B61F36 /* UIKit.framework */; };
+		9D3A734C14DCA38A00B61F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3A734B14DCA38A00B61F36 /* Foundation.framework */; };
+		9D3A734E14DCA38A00B61F36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3A734D14DCA38A00B61F36 /* CoreGraphics.framework */; };
+		9D3A735414DCA38A00B61F36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A735214DCA38A00B61F36 /* InfoPlist.strings */; };
+		9D3A735614DCA38A00B61F36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A735514DCA38A00B61F36 /* main.m */; };
+		9D3A735A14DCA38A00B61F36 /* RHITInfoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A735914DCA38A00B61F36 /* RHITInfoAppDelegate.m */; };
+		9D3A735D14DCA38A00B61F36 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A735B14DCA38A00B61F36 /* MainStoryboard_iPhone.storyboard */; };
+		9D3A736014DCA38A00B61F36 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A735E14DCA38A00B61F36 /* MainStoryboard_iPad.storyboard */; };
+		9D3A736314DCA38A00B61F36 /* RHITInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A736214DCA38A00B61F36 /* RHITInfoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D3A734514DCA38A00B61F36 /* RHITInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHITInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3A734914DCA38A00B61F36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9D3A734B14DCA38A00B61F36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9D3A734D14DCA38A00B61F36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9D3A735114DCA38A00B61F36 /* RHITInfo-Info.plist */ = {isa = PBXFileReference; path = "RHITInfo-Info.plist"; sourceTree = "<group>"; };
+		9D3A735314DCA38A00B61F36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9D3A735514DCA38A00B61F36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D3A735714DCA38A00B61F36 /* RHITInfo-Prefix.pch */ = {isa = PBXFileReference; path = "RHITInfo-Prefix.pch"; sourceTree = "<group>"; };
+		9D3A735814DCA38A00B61F36 /* RHITInfoAppDelegate.h */ = {isa = PBXFileReference; path = RHITInfoAppDelegate.h; sourceTree = "<group>"; };
+		9D3A735914DCA38A00B61F36 /* RHITInfoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHITInfoAppDelegate.m; sourceTree = "<group>"; };
+		9D3A735C14DCA38A00B61F36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		9D3A735F14DCA38A00B61F36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		9D3A736114DCA38A00B61F36 /* RHITInfoViewController.h */ = {isa = PBXFileReference; path = RHITInfoViewController.h; sourceTree = "<group>"; };
+		9D3A736214DCA38A00B61F36 /* RHITInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHITInfoViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D3A734214DCA38A00B61F36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3A734A14DCA38A00B61F36 /* UIKit.framework in Frameworks */,
+				9D3A734C14DCA38A00B61F36 /* Foundation.framework in Frameworks */,
+				9D3A734E14DCA38A00B61F36 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D3A733A14DCA38A00B61F36 = {
+			isa = PBXGroup;
+			children = (
+				9D3A734F14DCA38A00B61F36 /* RHITInfo */,
+				9D3A734814DCA38A00B61F36 /* Frameworks */,
+				9D3A734614DCA38A00B61F36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D3A734614DCA38A00B61F36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D3A734514DCA38A00B61F36 /* RHITInfo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D3A734814DCA38A00B61F36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D3A734914DCA38A00B61F36 /* UIKit.framework */,
+				9D3A734B14DCA38A00B61F36 /* Foundation.framework */,
+				9D3A734D14DCA38A00B61F36 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D3A734F14DCA38A00B61F36 /* RHITInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9D3A735814DCA38A00B61F36 /* RHITInfoAppDelegate.h */,
+				9D3A735914DCA38A00B61F36 /* RHITInfoAppDelegate.m */,
+				9D3A735B14DCA38A00B61F36 /* MainStoryboard_iPhone.storyboard */,
+				9D3A735E14DCA38A00B61F36 /* MainStoryboard_iPad.storyboard */,
+				9D3A736114DCA38A00B61F36 /* RHITInfoViewController.h */,
+				9D3A736214DCA38A00B61F36 /* RHITInfoViewController.m */,
+				9D3A735014DCA38A00B61F36 /* Supporting Files */,
+			);
+			path = RHITInfo;
+			sourceTree = "<group>";
+		};
+		9D3A735014DCA38A00B61F36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D3A735114DCA38A00B61F36 /* RHITInfo-Info.plist */,
+				9D3A735214DCA38A00B61F36 /* InfoPlist.strings */,
+				9D3A735514DCA38A00B61F36 /* main.m */,
+				9D3A735714DCA38A00B61F36 /* RHITInfo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D3A734414DCA38A00B61F36 /* RHITInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D3A736614DCA38A00B61F36 /* Build configuration list for PBXNativeTarget "RHITInfo" */;
+			buildPhases = (
+				9D3A734114DCA38A00B61F36 /* Sources */,
+				9D3A734214DCA38A00B61F36 /* Frameworks */,
+				9D3A734314DCA38A00B61F36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RHITInfo;
+			productName = RHITInfo;
+			productReference = 9D3A734514DCA38A00B61F36 /* RHITInfo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D3A733C14DCA38A00B61F36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9D3A733F14DCA38A00B61F36 /* Build configuration list for PBXProject "RHITInfo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9D3A733A14DCA38A00B61F36;
+			productRefGroup = 9D3A734614DCA38A00B61F36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D3A734414DCA38A00B61F36 /* RHITInfo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D3A734314DCA38A00B61F36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3A735414DCA38A00B61F36 /* InfoPlist.strings in Resources */,
+				9D3A735D14DCA38A00B61F36 /* MainStoryboard_iPhone.storyboard in Resources */,
+				9D3A736014DCA38A00B61F36 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D3A734114DCA38A00B61F36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3A735614DCA38A00B61F36 /* main.m in Sources */,
+				9D3A735A14DCA38A00B61F36 /* RHITInfoAppDelegate.m in Sources */,
+				9D3A736314DCA38A00B61F36 /* RHITInfoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D3A735214DCA38A00B61F36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D3A735314DCA38A00B61F36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9D3A735B14DCA38A00B61F36 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D3A735C14DCA38A00B61F36 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		9D3A735E14DCA38A00B61F36 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D3A735F14DCA38A00B61F36 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D3A736414DCA38A00B61F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D3A736514DCA38A00B61F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D3A736714DCA38A00B61F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RHITInfo/RHITInfo-Prefix.pch";
+				INFOPLIST_FILE = "RHITInfo/RHITInfo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9D3A736814DCA38A00B61F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RHITInfo/RHITInfo-Prefix.pch";
+				INFOPLIST_FILE = "RHITInfo/RHITInfo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D3A733F14DCA38A00B61F36 /* Build configuration list for PBXProject "RHITInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D3A736414DCA38A00B61F36 /* Debug */,
+				9D3A736514DCA38A00B61F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D3A736614DCA38A00B61F36 /* Build configuration list for PBXNativeTarget "RHITInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D3A736714DCA38A00B61F36 /* Debug */,
+				9D3A736814DCA38A00B61F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D3A733C14DCA38A00B61F36 /* Project object */;
+}
