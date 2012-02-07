@@ -6,16 +6,21 @@
 //
 
 #import "PageController.h"
-#import "Pages.h"
 #import "Page.h"
 #import "SubpageController.h"
 
 @implementation PageController
 
+- (void)pagesLoaded
+{
+    [self.tableView reloadData];
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [Pages sharedInstance].loadListener = self;
     [[Pages sharedInstance] loadData];
     [super viewWillAppear:animated];
 }
@@ -61,6 +66,14 @@
         Page *tmp = [[Pages sharedInstance].pages objectAtIndex:selectedRowIndex.row];
         c.myPage = tmp;
     }
+}
+
+#pragma mark - Refresh Button Event
+
+- (IBAction)refreshClicked:(id)sender
+{
+    [Pages sharedInstance].loadListener = self;
+    [[Pages sharedInstance] loadData];
 }
 
 @end

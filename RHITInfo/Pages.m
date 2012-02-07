@@ -19,6 +19,7 @@
 @synthesize myPages = _myPages;
 @synthesize currentStringValue = _currentStringValue;
 @synthesize currentPage = _currentPage;
+@synthesize loadListener = _loadListener;
 
 - (NSArray *)pages
 {
@@ -86,6 +87,8 @@
         self.currentPage.title = [self.currentStringValue copy];
     else if([elementName isEqualToString:@"url"])
         self.currentPage.url = [self.currentStringValue copy];
+    else if([elementName isEqualToString:@"pages"])
+        [self.loadListener pagesLoaded];
 }
 
 @end

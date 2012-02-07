@@ -21,6 +21,7 @@
 @synthesize mySubpages = _mySubpages;
 @synthesize currentStringValue = _currentStringValue;
 @synthesize currentSubpage = _currentSubpage;
+@synthesize loadListener = _loadListener;
 
 - (NSArray *)subpages
 {
@@ -77,6 +78,8 @@
         self.currentSubpage.title = [self.currentStringValue copy];
     else if([elementName isEqualToString:@"url"])
         self.currentSubpage.url = [self.currentStringValue copy];
+    else if([elementName isEqualToString:@"subpages"])
+        [self.loadListener pageLoaded:self];
 }
 
 @end

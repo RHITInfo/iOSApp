@@ -13,8 +13,14 @@
 
 @synthesize myPage = _myPage;
 
+- (void)pageLoaded:(Page *)p
+{
+    [self.tableView reloadData];
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
+    self.myPage.loadListener = self;
     [self.myPage loadData];
     self.title = self.myPage.title;
     [super viewWillAppear:animated];
@@ -61,6 +67,14 @@
         Subpage *tmp = [self.myPage.subpages objectAtIndex:selectedRowIndex.row];
         c.mySubpage = tmp;
     }
+}
+
+#pragma mark - Refresh Button Event
+
+- (IBAction)refreshClicked:(id)sender
+{
+    self.myPage.loadListener = self;
+    [self.myPage loadData];
 }
 
 @end

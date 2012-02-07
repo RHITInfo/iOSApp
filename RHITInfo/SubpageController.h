@@ -8,6 +8,6 @@
 #import <UIKit/UIKit.h>
 #import "Page.h"
 
-@interface SubpageController : UITableViewController
+@interface SubpageController : UITableViewController <PageLoadListener>
 @property (nonatomic, strong) Page *myPage;
 @end

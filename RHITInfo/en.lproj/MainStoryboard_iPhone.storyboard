@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="ug3-3h-liw" id="gud-PD-PvZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hPk-sb-0Q2"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hPk-sb-0Q2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="35Q-Je-dn4">
+                            <connections>
+                                <action selector="refreshClicked:" destination="ug3-3h-liw" id="Pnz-FI-IEW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="427" y="-269"/>
@@ -64,7 +71,13 @@
                             <outlet property="delegate" destination="vSK-M4-Zpz" id="xMT-QG-n4d"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="RHIT Info" id="XYJ-J8-ycT"/>
+                    <navigationItem key="navigationItem" title="RHIT Info" id="XYJ-J8-ycT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="zaf-FJ-UxH">
+                            <connections>
+                                <action selector="refreshClicked:" destination="vSK-M4-Zpz" id="3KE-Fu-RPp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="-104" y="340"/>
@@ -86,7 +99,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Z31-TH-H2K"/>
+                    <navigationItem key="navigationItem" id="Z31-TH-H2K">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="X8t-71-cx3">
+                            <connections>
+                                <action selector="refreshClicked:" destination="Ye8-FQ-LQU" id="00A-SW-Sbt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="webView" destination="SJI-q9-amx" id="EBw-mS-fr4"/>
                     </connections>

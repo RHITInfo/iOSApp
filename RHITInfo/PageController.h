@@ -6,7 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Pages.h"
 
-@interface PageController : UITableViewController
+@interface PageController : UITableViewController <PagesLoadedListener>
 
 @end

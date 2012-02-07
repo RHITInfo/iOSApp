@@ -32,7 +32,13 @@
                             <outlet property="delegate" destination="X7d-OI-MP9" id="2C2-VY-Akd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="RHIT Info" id="koU-55-tXF"/>
+                    <navigationItem key="navigationItem" title="RHIT Info" id="koU-55-tXF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="s4S-bz-quF">
+                            <connections>
+                                <action selector="refreshClicked:" destination="X7d-OI-MP9" id="rav-WD-JFe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                 </tableViewController>
             </objects>
@@ -54,7 +60,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OIU-Tv-xsr"/>
+                    <navigationItem key="navigationItem" id="OIU-Tv-xsr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Dgn-fb-SH2">
+                            <connections>
+                                <action selector="refreshClicked:" destination="edT-Sc-LwB" id="tNZ-FE-bXa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="webView" destination="qNZ-Ni-lcx" id="3KB-YY-zL8"/>
                     </connections>
@@ -89,7 +101,13 @@
                             <outlet property="delegate" destination="lpe-QR-lwd" id="5zi-ql-TPY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="w70-Os-mQS"/>
+                    <navigationItem key="navigationItem" id="w70-Os-mQS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="8wH-uu-GoL">
+                            <connections>
+                                <action selector="refreshClicked:" destination="lpe-QR-lwd" id="13W-qC-JM9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="1939" y="-1565"/>

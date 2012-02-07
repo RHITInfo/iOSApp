@@ -24,4 +24,11 @@
     return YES;
 }
 
+#pragma mark - Refresh Button Event
+
+- (IBAction)refreshClicked:(id)sender
+{
+    [self.webView reload];
+}
+
 @end
