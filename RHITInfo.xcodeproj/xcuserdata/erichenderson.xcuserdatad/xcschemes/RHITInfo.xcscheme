@@ -79,6 +79,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "RHITInfo"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

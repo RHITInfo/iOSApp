@@ -342,11 +342,15 @@
 		9D3A736714DCA38A00B61F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Henderson";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Eric Henderson";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RHITInfo/RHITInfo-Prefix.pch";
 				INFOPLIST_FILE = "RHITInfo/RHITInfo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "AC297A66-5E10-4D5F-9FC8-5B381D7221F1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AC297A66-5E10-4D5F-9FC8-5B381D7221F1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -354,11 +358,16 @@
 		9D3A736814DCA38A00B61F36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Henderson";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Eric Henderson";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RHITInfo/RHITInfo-Prefix.pch";
 				INFOPLIST_FILE = "RHITInfo/RHITInfo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "AC297A66-5E10-4D5F-9FC8-5B381D7221F1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AC297A66-5E10-4D5F-9FC8-5B381D7221F1";
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
