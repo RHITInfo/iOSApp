@@ -5,82 +5,66 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
     </dependencies>
     <scenes>
-        <scene sceneID="qhF-AQ-s6T">
+        <scene sceneID="DzD-P3-Acy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mxW-VT-L3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="ug3-3h-liw" customClass="SubpageController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bdt-MA-vSv">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFG-4M-PPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="A6W-od-dan" customClass="PageController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FMt-om-bkq">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SubpageCell" id="iJa-a5-u9X">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ocR-wv-G9m">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="342"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PageCell" id="ehE-vj-TlD">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="RVg-sw-VUU" kind="push" identifier="PageToSubpage" id="gmh-z2-xDf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <segue destination="Ye8-FQ-LQU" kind="push" identifier="SubpageToView" id="z7j-zi-7qd"/>
+                                    <outlet property="dataSource" destination="A6W-od-dan" id="a1t-1l-zeV"/>
+                                    <outlet property="delegate" destination="A6W-od-dan" id="873-7Y-mUA"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ug3-3h-liw" id="u6z-Tw-1Pi"/>
-                            <outlet property="delegate" destination="ug3-3h-liw" id="gud-PD-PvZ"/>
-                        </connections>
-                    </tableView>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="hPk-sb-0Q2">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="35Q-Je-dn4">
+                            </tableView>
+                            <imageView contentMode="scaleAspectFit" image="RoseLogo.png" id="Z9N-aR-7ON">
+                                <rect key="frame" x="5" y="350" width="310" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="IvL-aE-lK6" appends="YES" id="D1E-5n-LKl"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RHIT Info" id="AvC-60-q4T">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="cPl-l4-CFt">
                             <connections>
-                                <action selector="refreshClicked:" destination="ug3-3h-liw" id="Pnz-FI-IEW"/>
+                                <action selector="refreshClicked:" destination="A6W-od-dan" id="L6R-Bh-9ef"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                </tableViewController>
+                    <connections>
+                        <outlet property="tableView" destination="ocR-wv-G9m" id="Ghd-Ha-sql"/>
+                    </connections>
+                </viewController>
+                <tapGestureRecognizer cancelsTouchesInView="NO" delaysTouchesEnded="NO" id="IvL-aE-lK6">
+                    <connections>
+                        <action selector="imageClicked:" destination="A6W-od-dan" id="Me1-fx-CCv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="427" y="-269"/>
-        </scene>
-        <scene sceneID="nhT-EN-MU2">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nSw-dG-Xw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="vSK-M4-Zpz" customClass="PageController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yKQ-OJ-0fg">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PageCell" id="aVH-a8-MKR">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <connections>
-                                    <segue destination="ug3-3h-liw" kind="push" identifier="PageToSubpage" id="9md-jY-ft4"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="vSK-M4-Zpz" id="BHu-NU-KBq"/>
-                            <outlet property="delegate" destination="vSK-M4-Zpz" id="xMT-QG-n4d"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="RHIT Info" id="XYJ-J8-ycT">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="zaf-FJ-UxH">
-                            <connections>
-                                <action selector="refreshClicked:" destination="vSK-M4-Zpz" id="3KE-Fu-RPp"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-            </objects>
-            <point key="canvasLocation" x="-104" y="340"/>
+            <point key="canvasLocation" x="-111" y="356"/>
         </scene>
         <scene sceneID="7T7-On-0up">
             <objects>
@@ -121,27 +105,77 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vSK-M4-Zpz" kind="relationship" relationship="rootViewController" id="KQz-V8-Nm0"/>
+                        <segue destination="A6W-od-dan" kind="relationship" relationship="rootViewController" id="OoM-VJ-iET"/>
                     </connections>
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="-111" y="-269"/>
         </scene>
+        <scene sceneID="ZiL-7K-WsW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Pj-pr-5yf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="RVg-sw-VUU" customClass="SubpageController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PAT-XT-YxA">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="34g-jR-Mdf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="342"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SubpageCell" id="jh5-1B-gMY">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="Ye8-FQ-LQU" kind="push" identifier="SubpageToView" id="liQ-fz-Kon"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="RVg-sw-VUU" id="xbs-qD-Y1x"/>
+                                    <outlet property="delegate" destination="RVg-sw-VUU" id="Xe2-yF-Rq2"/>
+                                </connections>
+                            </tableView>
+                            <imageView contentMode="scaleAspectFit" image="RoseLogo.png" id="UiW-Lo-6Cw">
+                                <rect key="frame" x="5" y="350" width="310" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yaX-oW-VXK" appends="YES" id="Kou-lu-5vC"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dOk-4R-a4L">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="u8j-z2-ZTa">
+                            <connections>
+                                <action selector="refreshClicked:" destination="RVg-sw-VUU" id="jVw-yN-YvY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="34g-jR-Mdf" id="AyZ-HK-HUy"/>
+                    </connections>
+                </viewController>
+                <tapGestureRecognizer cancelsTouchesInView="NO" delaysTouchesEnded="NO" id="yaX-oW-VXK">
+                    <connections>
+                        <action selector="imageClicked:" destination="RVg-sw-VUU" id="U1j-jL-WtB"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="427" y="-269"/>
+        </scene>
     </scenes>
-    <classes>
-        <class className="PageController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PageController.h"/>
-        </class>
-        <class className="SubpageController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SubpageController.h"/>
-        </class>
-        <class className="ViewerController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewerController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
+    <resources>
+        <image name="RoseLogo.png" width="2309" height="375"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

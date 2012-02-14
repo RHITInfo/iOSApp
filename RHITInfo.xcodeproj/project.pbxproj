@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D1E78A214EACDF10024ED90 /* RoseLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D1E78A114EACDF10024ED90 /* RoseLogo.png */; };
 		9D3A734A14DCA38A00B61F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3A734914DCA38A00B61F36 /* UIKit.framework */; };
 		9D3A734C14DCA38A00B61F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3A734B14DCA38A00B61F36 /* Foundation.framework */; };
 		9D3A734E14DCA38A00B61F36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3A734D14DCA38A00B61F36 /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 		9D3A737614DCB6D200B61F36 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A736F14DCB6D200B61F36 /* Icon.png */; };
 		9D3A737714DCB6D200B61F36 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A737014DCB6D200B61F36 /* Icon@2x.png */; };
 		9D3A737814DCB6D200B61F36 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A737114DCB6D200B61F36 /* iTunesArtwork */; };
+		9D6570E814EB07D6000BAF0A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6570E714EB07D6000BAF0A /* QuartzCore.framework */; };
+		9D6570EB14EB089A000BAF0A /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6570EA14EB089A000BAF0A /* arrow.png */; };
 		9D692E7F14E2DFB60075BD97 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D692E7B14E2DFB60075BD97 /* Default-Landscape~ipad.png */; };
 		9D692E8014E2DFB60075BD97 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D692E7C14E2DFB60075BD97 /* Default-Portrait~ipad.png */; };
 		9D692E8414E2DFE50075BD97 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D692E8314E2DFE50075BD97 /* Default.png */; };
@@ -35,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D1E78A114EACDF10024ED90 /* RoseLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RoseLogo.png; sourceTree = "<group>"; };
 		9D3A734514DCA38A00B61F36 /* RHITInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHITInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A734914DCA38A00B61F36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9D3A734B14DCA38A00B61F36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,6 +60,8 @@
 		9D3A736F14DCB6D200B61F36 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		9D3A737014DCB6D200B61F36 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		9D3A737114DCB6D200B61F36 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		9D6570E714EB07D6000BAF0A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9D6570EA14EB089A000BAF0A /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../../Documents/arrow.png; sourceTree = "<group>"; };
 		9D692E7B14E2DFB60075BD97 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		9D692E7C14E2DFB60075BD97 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		9D692E8314E2DFE50075BD97 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6570E814EB07D6000BAF0A /* QuartzCore.framework in Frameworks */,
 				9D3A734A14DCA38A00B61F36 /* UIKit.framework in Frameworks */,
 				9D3A734C14DCA38A00B61F36 /* Foundation.framework in Frameworks */,
 				9D3A734E14DCA38A00B61F36 /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +96,7 @@
 		9D3A733A14DCA38A00B61F36 = {
 			isa = PBXGroup;
 			children = (
+				9D6570E714EB07D6000BAF0A /* QuartzCore.framework */,
 				9D3A736914DCB6AA00B61F36 /* Resources */,
 				9D3A734F14DCA38A00B61F36 /* RHITInfo */,
 				9D3A734814DCA38A00B61F36 /* Frameworks */,
@@ -160,6 +168,8 @@
 		9D3A736A14DCB6B800B61F36 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9D6570EA14EB089A000BAF0A /* arrow.png */,
+				9D1E78A114EACDF10024ED90 /* RoseLogo.png */,
 				9D692E7B14E2DFB60075BD97 /* Default-Landscape~ipad.png */,
 				9D692E7C14E2DFB60075BD97 /* Default-Portrait~ipad.png */,
 				9D692E8314E2DFE50075BD97 /* Default.png */,
@@ -239,6 +249,8 @@
 				9D692E8014E2DFB60075BD97 /* Default-Portrait~ipad.png in Resources */,
 				9D692E8414E2DFE50075BD97 /* Default.png in Resources */,
 				9D692E8614E2DFF50075BD97 /* Default@2x.png in Resources */,
+				9D1E78A214EACDF10024ED90 /* RoseLogo.png in Resources */,
+				9D6570EB14EB089A000BAF0A /* arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,15 +354,15 @@
 		9D3A736714DCA38A00B61F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Henderson";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Eric Henderson";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eric Henderson (9VJDDX5J65)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Eric Henderson (9VJDDX5J65)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RHITInfo/RHITInfo-Prefix.pch";
 				INFOPLIST_FILE = "RHITInfo/RHITInfo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "AC297A66-5E10-4D5F-9FC8-5B381D7221F1";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AC297A66-5E10-4D5F-9FC8-5B381D7221F1";
+				PROVISIONING_PROFILE = "1D14F52F-2C50-49A2-B00C-12D1D41CD935";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D14F52F-2C50-49A2-B00C-12D1D41CD935";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -358,15 +370,15 @@
 		9D3A736814DCA38A00B61F36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Henderson";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Eric Henderson";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eric Henderson (9VJDDX5J65)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Eric Henderson (9VJDDX5J65)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RHITInfo/RHITInfo-Prefix.pch";
 				INFOPLIST_FILE = "RHITInfo/RHITInfo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "AC297A66-5E10-4D5F-9FC8-5B381D7221F1";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AC297A66-5E10-4D5F-9FC8-5B381D7221F1";
+				PROVISIONING_PROFILE = "1D14F52F-2C50-49A2-B00C-12D1D41CD935";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D14F52F-2C50-49A2-B00C-12D1D41CD935";
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
